@@ -74,8 +74,9 @@ export default {
 <style lang="scss" scoped>
 .dashboard {
   &__search {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
+    padding: 0 10px;
 
     display: flex;
     align-items: center;

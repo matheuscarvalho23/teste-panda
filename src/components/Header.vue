@@ -52,6 +52,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 10px;
   }
 
   &__user {
