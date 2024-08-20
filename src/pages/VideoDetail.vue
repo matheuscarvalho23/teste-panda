@@ -5,7 +5,10 @@
     <div class="video__container">
       <div class="video__content">
         <h2>{{ videoDetail.title }}</h2>
-        <video-player :iframe-src="videoDetail.video_player"/>
+        <video-player
+          :iframe-src="videoDetail.video_player"
+          :description="videoDetail.description"
+        />
       </div>
     </div>
   </div>

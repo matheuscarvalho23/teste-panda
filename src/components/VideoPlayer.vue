@@ -6,7 +6,7 @@
       class="player__video"
     ></iframe>
 
-    <p>{{ description.length ? description : 'Sem descrição' }}</p>
+    <p>{{ description ? description : 'Sem descrição' }}</p>
   </div>
 </template>
 
@@ -47,7 +47,6 @@ export default {
         window.pandascripttag.push(() => {
           this.player = new window.PandaPlayer(this.iframeId, {
             onReady: () => {
-              console.log('Player is ready');
               this.playerReady = true;
               this.updateCurrentTime();
               this.setupEventListeners();
